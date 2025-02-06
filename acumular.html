@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acumular Cashback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gerar Cashback</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Faça uma compra e acumule 5% cashback!</h2>
+            <form id="compraForm">
+                <label for="valorCompra">Valor da Compra (R$):</label>
+                <input type="number" id="valorCompra" value="100.00" required>
+                <button type="submit">Finalizar Compra</button>
+            </form>
+            <p id="cashbackInfo"></p>
+        </section>
+        <form id="utilizarForm"></form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Cashback</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
