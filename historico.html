@@ -11,7 +11,12 @@
         <h1>Consultar Cashback</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="acumular.html">Gerar Cashback</a></li>
+                <li><a href="utilizar.html">Utilizar Cashback</a></li>
+                <li><a href="historico.html">Histórico de Cashback</a></li>
+                <li><a href="notificacoes.html">Notificações</a></li>
+                <li><a href="regras2.html">Regras e Condições</a></li>
             </ul>
         </nav>
     </header>
@@ -21,8 +26,9 @@
             <table border="1">
                 <thead>
                     <tr>
-                        <th>Data</th>
+                        <th>Data de geração</th>
                         <th>Valor</th>
+                        <th></th>
                         <th>Status</th>
                         <th>Expira em</th>
                         <th>Código para utilização</th>
@@ -32,6 +38,7 @@
                     <tr>
                         <td>01/01/2025</td>
                         <td>R$ 10,00</td>
+                        <td style=background-color:yellow> _ </td>
                         <td>Em análise até 10/02/2025</td>
                         <td> - </td>
                         <td> - </td>
@@ -39,23 +46,33 @@
                     <tr>
                         <td>01/12/2024</td>
                         <td>R$ 5,00</td>
+                        <td style=background-color:red> _ </td>
                         <td>Cancelado</td>
-                        <td>01/03/2025</td>
+                        <td> - </td>
                         <td> RER4524 </td>
                     </tr>
                     <tr>
                         <td>01/12/2024</td>
                         <td>R$ 5,00</td>
+                        <td style=background-color:green> _ </td>
                         <td>Disponível para uso</td>
                         <td>01/03/2025</td>
-                        <td> RTF2345 <button type="submit">Copiar código</button></td>
+                        <td> RTF2345 </td>
+                        <td> <button onclick="alert('Código copiado com sucesso. Acesse a opção Utilizar Cashback para economizar na sua próxima compra.');">Copiar código</button> </td>
                     </tr>
                 </tbody>
             </table>
+            <h2>Status</h2>
+            <p><b>Em análise:</b> Após a confirmação do pagamento do pedido, o cashback será gerado na conta do cliente, porém ficará em análise por uma período determinado (confirmar se 40 dias em Centauro e 45 dias em Nike), para garantir que o pedido não seja cancelado, devolvido e seja entregue.</p>
+            <p></p>
+            <p><b>Disponível para uso:</b> O cashback está disponível para uso nas próximas compras através de um código de cupom com validade definida de 30 dias (Garantir regras de cupom de uso único, com controle de valor de compra mínima e cupom em valor R$).</p>
+            <p></p>
+            <p><b>Cancelado:</b> O cashback pode ser cancelado caso o pedido tenha sido devolvido, cancelado ou não entregue dentro dos períodos de análise determinados durante o status Em análise.</p>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Cashback</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>

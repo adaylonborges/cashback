@@ -10,8 +10,9 @@ document.getElementById('utilizarForm').addEventListener('submit', function (e) 
     e.preventDefault();
     const valorCompra = parseFloat(document.getElementById('valorCompra').value);
     const cashback = valorCompra - 5.00; // R$5,00 de cashback
-    document.getElementById('cashbackInfo').textContent = `Desconto com a utilização do cashback R$ 5,00`;
-    document.getElementById('cashbackInfo2').textContent = `Você pagou R$ ${cashback.toFixed(2)}`;
+    document.getElementById('cashbackInfo').textContent = `Total da compra: R$ ${valorCompra.toFixed(2)}`;
+    document.getElementById('cashbackInfo2').textContent = `Desconto com a utilização do cashback: R$ 5,00`;
+    document.getElementById('cashbackInfo3').textContent = `Você pagou: R$ ${cashback.toFixed(2)}`;
 
 });
 

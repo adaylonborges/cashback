@@ -3,96 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extensão de Cashback</title>
+    <title>Regras e Condições</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #FFE500;
-            padding: 20px;
-            text-align: center;
-        }
-        .hero {
-            padding: 50px 20px;
-            text-align: center;
-            background-color: #fff;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-        .cta-button {
-            background-color: #FFE500;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .cta-button:hover {
-            background-color: #FFE500;
-        }
-        .features {
-            display: flex;
-            justify-content: space-around;
-            padding: 50px 20px;
-            background-color: #f1f1f1;
-        }
-        .feature {
-            text-align: center;
-            max-width: 300px;
-        }
-        .feature img {
-            width: 80px;
-            margin-bottom: 20px;
-        }
-        .feature h2 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-        .feature p {
-            font-size: 1rem;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
 </head>
 <body>
     <header>
         <h1>Regras e Condições</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="acumular.html">Gerar Cashback</a></li>
+                <li><a href="utilizar.html">Utilizar Cashback</a></li>
+                <li><a href="historico.html">Histórico de Cashback</a></li>
+                <li><a href="notificacoes.html">Notificações</a></li>
+                <li><a href="regras2.html">Regras e Condições</a></li>
             </ul>
         </nav>
     </header>
-
+    <main>
     <section class="hero">
         <h1>Ganhe cashback e ative descontos nas suas próximas compras dos seus produtos favoritos.</h1>
     </section>
 
-    <section class="features">
-        <div class="feature">
+    <section class="">
+        <div class="">
             <h2>Economize em todas as compras</h2>
             <p>Receba cashback em milhares de produtos.</p>
         </div>
-    </section>
+        <h1>Jornadas do Usuário - Cashback</h1>
 
+    <div class="section">
+        <h2>1: Acumular cashback em compras</h2>
+        <ul>
+            <li><strong>Acesso à plataforma:</strong> O usuário faz login em sua conta no aplicativo ou site.</li>
+            <li><strong>Navegação e compra:</strong> O usuário navega pelos produtos, seleciona itens e adiciona ao carrinho.</li>
+            <li><strong>Finalização da compra:</strong> No checkout, o usuário visualiza o valor total da compra e uma mensagem informando o percentual de cashback que será acumulado.</li>
+            <li><strong>Confirmação da compra:</strong> Após a confirmação do pagamento, o usuário recebe uma notificação na tela informando o valor do cashback pendente/em análise.</li>
+            <li><strong>Notificação de cashback creditado:</strong> Após a confirmação da compra pelo sistema, o usuário recebe uma notificação (push/e-mail/whatsapp) informando que o cashback foi gerado em sua conta e está em análise.</li>
+            <li><strong>Visualização do saldo:</strong> O usuário pode acessar sua área de cashback para ver o saldo atualizado.</li>
+        </ul>
+        <h3>Elementos do protótipo:</h3>
+        <ul>
+            <li>Tela de checkout com cálculo de cashback em tempo real.</li>
+            <li>Notificação na tela após a compra: "Você acumulou R$ X de cashback! O valor será gerado em análise após a confirmação da compra."</li>
+            <li>Notificação posterior: "Seu cashback de R$ X foi gerado! Confira seu saldo."</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>2: Visualizar cashback acumulado</h2>
+        <ul>
+            <li><strong>Acesso ao saldo:</strong> O usuário acessa a seção "Cashback" no aplicativo ou site.</li>
+            <li><strong>Visualização do saldo:</strong> O usuário vê a lista de cupons de cashbacks disponíveis para resgate.</li>
+            <li><strong>Opção de resgate:</strong> O usuário clica em "Copiar código de cashback" e escolhe aplicar o valor como desconto em uma nova compra.</li>
+            <li><strong>Aplicação do desconto:</strong> Durante o checkout, o valor do cashback é automaticamente aplicado como desconto.</li>
+            <li><strong>Confirmação do resgate:</strong> O usuário recebe uma notificação confirmando o resgate e o novo saldo de cashback.</li>
+        </ul>
+        <h3>Elementos do protótipo:</h3>
+        <ul>
+            <li>Tela de saldo de cashback com botão "Copiar código de cashback".</li>
+            <li>Tela de checkout com opção "Aplicar cashback" e valor descontado destacado.</li>
+            <li>Notificação: "Você utilizou R$ de cashback e economizou R$ na sua compra."</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3: Receber notificações de cashback</h2>
+        <ul>
+            <li><strong>Compra realizada:</strong> O usuário finaliza uma compra e recebe uma notificação imediata: "Você acumulou R$ X de cashback que estará em análise até xx/xx/xxxx. Acesse sua conta para mais informações sobre o seu cashback."</li>
+            <li><strong>Cashback disponível para uso:</strong> Após a confirmação da compra e passado o período de análise, o usuário recebe uma notificação: "Seu cashback de R$ X está disponível para uso! Confira seu saldo."</li>
+        </ul>
+        <h3>Elementos do protótipo:</h3>
+        <ul>
+            <li>Notificações push, e-mail e whatsapp com mensagens claras e diretas.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4: Verificar regras e condições do cashback</h2>
+        <ul>
+            <li><strong>Acesso às regras:</strong> O usuário acessa a seção "Regras e Condições" no menu principal ou na área de cashback.</li>
+            <li><strong>Leitura das regras:</strong> O usuário visualiza um texto claro e organizado, explicando como acumular, resgatar e usar o cashback.</li>
+            <li><strong>Dúvidas frequentes:</strong> O usuário pode acessar uma seção de FAQs para esclarecer dúvidas adicionais.</li>
+        </ul>
+        <h3>Elementos do protótipo:</h3>
+        <ul>
+            <li>Tela de "Regras e Condições" com tópicos claros e linguagem simples.</li>
+            <li>Link para FAQs ou suporte ao cliente.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Fluxo Geral do Protótipo:</h2>
+        <ul>
+            <li><strong>App e Site:</strong> Seção destacada para "Cashback".</li>
+            <li><strong>Listagem de Cashbacks:</strong> Saldo atual, histórico, opção de resgate e link para regras.</li>
+            <li><strong>Notificações:</strong> Integração com notificações push e e-mail para manter o usuário informado.</li>
+            <li><strong>Checkout:</strong> Integração do cashback como opção de geração ou uso de cashback durante a compra.</li>
+        </ul>
+    </div>
+        <p>
+            
+        </p>
+    </section>
+    </main>
     <footer>
         <p>&copy; 2025 Cashback</p>
     </footer>
