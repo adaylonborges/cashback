@@ -8,7 +8,8 @@
 </head>
 <body>
     <header>
-        <h1>Gerar Cashback</h1>
+        <img src="img/spoint.png" width="50px"/>
+        <h2>Casos de uso - Gerar Cashback</h2>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,7 +24,7 @@
     <main>
         <section>
             <h2>Faça uma compra e acumule 5% cashback!</h2>
-            <img src="img/tenis.png"/>
+            <img src="img/tenis.png" width="250px"/>
             <form id="compraForm">
                 <label for="valorCompra">Valor da Compra (R$):</label>
                 <input type="number" id="valorCompra" value="100.00" required>
@@ -31,6 +32,12 @@
             </form>
             <p id="cashbackInfo"></p>
         </section>
+        <h4>Regras:</h4>
+        <p>- O cashback será gerado sobre toda a grade de produtos, mas podem haver produtos de exceção.</p>
+        <p>- O cashback será calculado em % no valor total pago pelo cliente no carrinho.</p>
+        <p>- O cashback será calculado apenas sobre o valor pago pelo cliente.</p>
+        <p>- O cashback será gerado após a confirmação da compra, através de um código de cupom em valor R$.</p>
+        <p>- O cupom de cashback será um código de uso único, vinculado ao CPF do cliente, com data de validade e regra de valor mínimo da compra para utilização.</p>
         <form id="utilizarForm"></form>
     </main>
     <footer>
